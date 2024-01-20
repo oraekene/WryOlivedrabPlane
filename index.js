@@ -143,7 +143,7 @@ const fetchUserActivity = async () => {
   }
 };
 
-cron.schedule("11 07 * * 0", fetchWalletAddresses);
+cron.schedule("13 07 * * 6", fetchWalletAddresses);
 setInterval(fetchUserActivity, 180000);
 
 process.on("exit", () => {
