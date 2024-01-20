@@ -161,11 +161,6 @@ app.get('/', (req, res) => {
   res.send('Hello World!')
 })
 
-// Add this new route for health checks
-app.get('/health', (req, res) => {
-  res.status(200).send('OK');
-})
-
 const server = app.listen(port, () => {
   console.log(`Example app listening at http://localhost:${port}`)
 })
