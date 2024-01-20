@@ -144,7 +144,7 @@ const fetchUserActivity = async () => {
 };
 
 cron.schedule("11 07 * * 0", fetchWalletAddresses);
-setInterval(fetchUserActivity, 120000);
+setInterval(fetchUserActivity, 180000);
 
 process.on("exit", () => {
   runIndex = getNextIndex(runIndex);
